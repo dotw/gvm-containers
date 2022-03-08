@@ -17,7 +17,7 @@ fi
 if [ "$1" = 'ospd-openvas' ]; then
     chmod -R 777 /run/redis/
 
-    rm -f /run/ospd.pid
+    rm -f /run/ospd/ospd.pid
     mkdir -p /run/ospd
 
     if [ -z "${SKIP_WAIT_REDIS}" ]; then
